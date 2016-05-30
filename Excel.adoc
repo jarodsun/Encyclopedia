@@ -1,0 +1,18 @@
+= Excel技巧
+Jarod Sun <garsday@gmail.com> Version 0.1
+2016年05月30日
+:toc: left
+:toclevels: 3
+:numbered:
+:linkattrs:
+:icons: font
+
+== 函数
+=== 从A列中，随机抽取一个数
+
+....
+=INDIRECT("A"&RANDBETWEEN(1,25))
+....
+
+NOTE: 说明：在A列中，有25行数据，从中选择一个随机的数据 +
+以上内容需要输入到B1中，然后按F9进行数据刷新
